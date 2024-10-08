@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head> 
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title>SWE Projects | Resume</title>
+    </head>
+    <body>
+        <div class = "header">
+        </div>
+        <div class = "container">
+            <div class = "navbar">
+                <nav>
+                    <ul>
+                        <li><a href = "./index.html">Home</a></li>
+                        <li><a href = "./education.html">Education</a></li>
+                        <li><a href = "./work.html">Work Experience</a></li>
+                        <li><a href = "./skills.html">Skills</a></li>
+                        <li><a href = "./contact.html">Contact</a></li>
+                        <li class = "dropdown">
+                                <button class="dropbtn">Projects
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                            <div class="dropdown-content">
+                                <a href="./projects.html">Software Engineering</a>
+                                <a href="./mobile_app.html">Mobile App</a>
+                                <a href="./cybersecurity.html">Cybersecurity</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <main>
+                <h1>Project Experience</h1>
+                    <ul>
+                        <div class = "courses">
+                            <li>
+                                <h3>Environmental Data Analysis Project</h3>
+                                <h4>Data Science Tools and Applications</h4>
+                                <h5><a href = "https://docs.google.com/presentation/d/1-iboLBkHuI9A4cHj6iRwdwxnrDSS8tXQgmRv3hrUiS0/edit#slide=id.p">Presentation</a></h5>
+                                <ul>
+                                    <li>Partnered with Second Nature, a nonprofit organization, to analyze ways of reducing carbon emissions from higher education institutions.</li>
+                                    <li>Analyzed 5 datasets provided by Second Nature to determine which affiliates are best meeting their Carbon Reduction Goals.</li>
+                                    <li>Created 4 visualization graphs and 1 data sheet to quantify and classify our analysis of "Which institutions are making progress towards their goals?"</li>
+                                    <li>Discovered and reported 2 errors regarding the 2 of the data sheets and exposed 1 flaw in Second Nature's data reporting tool SIMAP.</li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class = "courses">
+                            <li>
+                                <h3>Language Learning App</h3>
+                                <h4>Software  Engineering</h4>
+                                <h5><a href = "https://github.com/tommyho973/CS411Project">Github Repo</a></h5>
+                                <ul>
+                                    <li>Developed a language learning web application using Angular (Front-end) and Python Flask (Back-end) to teach English Second Language students the top 1,000 most commonly used English words for 3 different languages.</li>
+                                    <li>Integrated Firebase database to store and display flashcards for at least 1000 words per user.</li>
+                                    <li>Implemented third-party authentication through Firebase (Google) to enhance user security and privacy.</li>
+                                    <li>Successfully applied Scrum Methodologies to lead team members in weekly meetings over the course of 14 weeks.</li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class = "courses">
+                            <li>
+                                <div id = "calc">
+                                    <h3>JavaScript Calculator</h3>
+                                    <p>First Number: <input type = "text" id = "first-number"> Second Number: <input type = "text" id  = "second-number">
+                                        <button onclick = "addition()" class = "opbutton">+</button>
+                                        <button onclick = "subtract()" class = "opbutton">-</button>
+                                        <button onclick = "multiply()" class = "opbutton">*</button>
+                                        <button onclick = "divide()" class = "opbutton">/</button>
+                                        <button onclick = "power()" class = "opbutton">^</button>
+                                        <button onclick = "erase()" class = "clearbutton">C</button>
+                                    </p>
+                                    <div id = "output"></div>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <script src = "script.js"></script>
+            </main>
+        </div>
+        <footer>
+            <p>All Rights Reserved by Tommy Ho <a href = "www.linkedin.com/in/tommy-t-ho/">Credits</a> &#169;</p>
+        </footer>
+    </body>
+</html>

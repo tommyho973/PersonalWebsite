@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+html {
+    background-color: #455D7A;
+}
+
+nav {
+    width: 90vw;
+}
+
+body {
+    margin: 1vh 1vw;
+    font-family: 'Roboto', sans-serif;
+}
+.skills li{
+    font-size: 1.2vw ;
+}
+
+.header {
+    margin-top:4%;
+    text-align: left;
+    color: #F95959;
+}
+
+main {
+    width: 70vw;
+}
+
+li {
+    color: #FACF5A;
+}
+
+p {
+    color: #FACF5A;
+}
+
+h1 {
+    margin-top: 0;
+    color: #FACF5A;
+}
+
+h2, h3 {
+    color: #FACF5A;
+}
+
+.navbar {
+    position: fixed; /* Keep navbar at the top */
+    top: 0; /* Align to the top of the page */
+    left: 50%; /* Start centering */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #233142; /* Background color */
+    width: 90vw; /* Set a width for the navbar */
+    z-index: 1000; /* Ensure it overlaps other content */
+}
+
+.navbar ul {
+    display: flex; /* Use flexbox for horizontal layout */
+    padding: 0; /* Remove padding */
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Reset margin */
+}
+
+.navbar a {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block; /* Block display for full clickable area */
+}
+
+.dropdown {
+    position: relative; /* Ensure dropdown content positions correctly */
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #F95959;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px #F95959;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Remaining styles */
+
+ul {
+    list-style-type: none;
+}
+.container{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    max-width: 100%;
+    max-height:100%;
+    margin-right:1vw;
+}
+.intro-text{
+    font-size: 20px;
+}
+.class-container{
+    width:70vw;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+.courses{
+    background-color: rgb(206, 216, 232);
+    padding: .1vh .5vw;
+    margin: 1vh 0;
+    border-radius: 15px;    
+}
+.courses h3{
+    color:black;
+}
+.courses li{
+    margin: 2vh 0;
+    color:black;
+}
+.skills{
+    display: grid;
+    text-align: left;
+    grid-template-columns: 33% 33% 33%;
+}   
+.skills-container{
+    display: grid;
+    align-items: start;
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+}
+#calc p{
+    color:brown;
+}
+#first-number{
+    background-color: black;
+    border-radius:50px;
+    color:white;
+}
+#second-number{
+    background-color: black;
+    border-radius:50px;
+    color:white;
+}
+
+.opbutton{
+    border-radius: 50px;
+    background-color: orange;
+}
+.clearbutton{
+    border-radius: 50px;
+    background-color: gainsboro;
+}
+@media screen and (max-width: 768px){
+    .header{
+        text-align: center;
+    }
+    .navbar a{
+        font-size: 1.3vw;
+    }
+    li{
+        font-size: 1.3vw;
+    }
+    h1{
+        font-size: 1.3vw; 
+    }
+    h2{
+        font-size: 1.3vw;
+    }
+    h3{
+        font-size: 1.3vw;
+    }
+    h4{
+        font-size: 1.3vw;
+    }
+    h5{
+        font-size: 1.3vw;
+    }
+    p{
+        font-size: 1.3vw;
+    }
+    .dropdown .dropbtn{
+        font-size: 1.3vw;
+    } 
+    main{
+        width: 100vw;
+    }
+    .container{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        margin-left: auto;
+        margin-right:auto;
+
+    }
+
+
+}

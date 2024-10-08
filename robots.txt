@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /contact.html
+Disallow: /education.html
+Disallow: /projects.html
+Disallow: /skills.html
+Disallow: /work.html
+
